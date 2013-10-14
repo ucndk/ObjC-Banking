@@ -27,6 +27,9 @@ int main(int argc, const char * argv[])
 
         NSLog(@"%@ has %lu accounts", customer.name, (unsigned long)customer.accounts.count);
         NSLog(@"%@ has a total balance of %f", customer.name, customer.totalBalance);
+        
+        // Output without timestamp
+        printf("%s\n", customer.name.UTF8String);
     }
     return 0;
 }
