@@ -18,4 +18,25 @@
     return  self;
 }
 
+- (BOOL)depositAmount:(double)amount {
+    BOOL ok = FALSE;
+    
+    if (amount > 0) {
+        self.balance += amount;
+        ok = YES;
+    }
+    return ok;
+}
+
+- (BOOL)withdrawAmount:(double)amount {
+    BOOL ok = NO;
+    
+    if (self.balance >= amount) {
+        self.balance -= amount;
+        ok = YES;
+    }
+    
+    return ok;
+}
+
 @end
