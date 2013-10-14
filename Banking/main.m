@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Customer.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Customer *customer = [[Customer alloc] initWithCustomerNumber:234 andName:@"Christian"];
         
+        NSLog(@"Customer name: %@", customer.name);
     }
     return 0;
 }
