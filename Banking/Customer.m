@@ -32,4 +32,8 @@
     return total;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%d: %@ Balance: kr. %f", self.customerNumber, self.name, self.totalBalance];
+}
+
 @end

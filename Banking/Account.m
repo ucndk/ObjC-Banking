@@ -23,7 +23,7 @@
     
     if (amount > 0) {
         self.balance += amount;
-        ok = YES;
+        ok = TRUE;
     }
     return ok;
 }
